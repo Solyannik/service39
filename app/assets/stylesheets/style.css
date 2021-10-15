@@ -1,0 +1,314 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.title {
+  font-size: 30px;
+  font-family: "Roboto";
+  margin-right: 220px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.text {
+  font-family: 'Abril Fatface';
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.column-1-5 {
+  font-family: "Roboto";
+  width: 20%;
+  float: left;
+  font-size: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 960px) {
+  .column-1-5 {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media (max-width: 640px) {
+  .column-1-5 {
+    float: none;
+    width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .column-1-5 {
+    float: none;
+    width: auto;
+  }
+}
+
+/* Navigation */
+
+.nav-container {
+  background: #fffffa;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+  height: 72px;
+  margin-top: -65px;
+  z-index: 500;
+  position: relative;
+}
+
+.wrapper {
+  font-family: 'Abril Fatface';
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px){
+  .wrapper {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 992px){
+  .wrapper {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 767px){
+  .wrapper {
+    max-width: none;
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav .logo {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.nav-items li {
+  list-style: none;
+  font-size: 16px;
+  line-height: 36px;
+  border: 4px solid transparent;
+  padding: 0px 16px;
+  transition: all .3s;
+ }
+
+.nav-items li:hover {
+  border-color: #8dbafc;   #рамочка при наведении
+  border-radius: 6px;
+  
+}
+
+.nav-items li:nth-last-of-type(1) {
+  margin: 0;
+}
+
+.nav-items li a {
+  color: #021718;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+/* Header */
+
+.header-container {
+  height: 100%;
+  background: #8dbafc;
+  display: flex;
+  align-items: center;
+  margin: 0px auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-weight: 900px;
+  font-size: 64px;
+  line-height: 75px;
+  color: #021718;
+  margin-bottom: 24px;
+}
+
+header p {
+  font-size: 24px;
+  line-height: 42px;
+  color: #021718;
+  width: 418px;
+  margin-bottom: 48px;
+}
+
+header a{
+  color: #bacef7;
+  font-size: 24px;
+  text-decoration: none;
+  background: #6237bf;
+  border-radius: 6px;
+  padding: 12px 48px;
+  display: inline-block;
+  transition: 300ms;
+}
+
+header a:hover {
+  transform: translateY(-8px);
+}
+
+/* Social-icons */
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+  background: #fffffa;
+}
+
+.social-icons a {
+  margin: 0 30px;
+}
+
+container .social-icons h2 {
+  font-size: 35px;
+  margin-top: 0px !important;
+  margin-left: 500px;
+  position: fixed;
+}
+
+.social-icons a:nth-of-type(1) {
+  margin-left: 0;  
+}
+
+.social-icons img {
+  width: 35px;
+  height: 35px;
+}
+
+.social-icons img:hover {
+  transform: translateY(-5px);
+}
+
+/* Hero image */
+
+header .hero-image {
+  position: relative;
+}
+
+header .hero-image img {
+  transition: 300ms;
+  position: relative;
+  z-index: 100;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 550px;
+  height: 410px;
+  margin-left: 40px;
+}
+
+header .hero-image img:hover {
+  transform: rotate(-5deg);   #картинка движется по часовой/против часовой
+}
+
+header .hero-image .photo-bg {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: -5px;
+  width: 550px;
+  height: 410px;
+  left: 47px;
+  top: 21px;
+  background: #6237bf;
+  transform: rotate(-5deg); 
+}
+
+/* Search-box */
+
+.search-box {
+  margin: 0 auto;
+  text-align: right;
+  position: relative;
+  top: 0;
+  transition: 300ms;
+}
+
+.search-box input {
+  background: #fffffa;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 0px 0px 8px 8px;
+  font-size: 24px;
+  line-height: 42px;
+  border: 0;
+  padding: 12px 48px;
+}
+
+/* Search & Close Buttons */
+
+.nav-btn-container {
+  display: flex;
+  position: relative;
+}
+
+.nav-btn-container img {
+  position: absolute;
+  width: 25; 
+  height: 25;
+}
+
+.nav-btn-container .close-btn {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-6px);
+  transition: 300ms;
+}
+
+.nav-btn-container .search-btn {
+  pointer-events: auto;
+  transition: 300ms;
+}
+
+.nav-btn-container.active .search-btn {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-6px);
+}
+
+.nav-btn-container.active .close-btn {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
