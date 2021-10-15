@@ -1,40 +1,21 @@
 <% provide :title, "Price" %>
-<div class="search-box">
-  <input type="text" placeholder=" Напишите что-то">
-</div>
 
-<div class="nav-container">
-  <div class="wrapper">
-  	<nav>
-  	  <div class="logo">
-  	    <img src="/images/logo.png" alt="" />
-  	  </div>
-  	  <div class="title">
-  	    <p>КОМПЬЮТЕРНЫЙ СЕРВИС</p>
-  	  </div>
-  	  <ul class="nav-items">
-  	  <li>
-  	    <a href="#">обо мне</a>
-  	  </li>
-  	  <li>
-  	  	<a href="/images/price.png">цены</a>
-  	  </li>
-  	  </ul>	
-  	</nav>
-  </div>	
-</div>
-<%= render 'layouts/footer' %>
+<%= render 'layouts/header' %> 
+
 <div class="header-container">
   <div class="wrapper">
   	<header>
-      <div class="text hero-content">
+      <div class="text">
         <h1>Цены на услуги</h1>
-          <p>Цены указаны без учета стоимости деталей.<br/> Полная стоимость ремонта будет известна после     диагностики устройства.
+          <p>Цены указаны без учета стоимости деталей.<br/> Полная стоимость ремонта будет известна после диагностики устройства.
     	  </p>
       </div>
-      <div>
+
+      <div class="text">
         <img src="/images/price.png" alt="Прайс" width="700" height="700"/>   
       </div>
-    </div>
+    </header>
   </div>
-</header>
+</div>
+
+<%= render 'layouts/footer' %>

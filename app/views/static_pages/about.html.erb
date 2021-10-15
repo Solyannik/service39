@@ -1,60 +1,41 @@
 <% provide :title, "About" %>
-<div class="search-box">
-  <input type="text" placeholder=" Напишите что-то">
-</div>
 
-<div class="nav-container">
-  <div class="wrapper">
-  	<nav>
-  	  <div class="logo">
-  	    <img src="/images/logo.png" alt="" />
-  	  </div>
-  	  <div class="title">
-  	    <p>КОМПЬЮТЕРНЫЙ СЕРВИС</p>
-  	  </div>
-  	  <ul class="nav-items">
-  	  <li>
-  	    <a href="#">обо мне</a>
-  	  </li>
-  	  <li>
-  	  	<a href="/images/price.png">цены</a>
-  	  </li>
-  	  </ul>	
-  	</nav>
-  </div>	
-</div>
-<%= render 'layouts/footer' %>
+<%= render 'layouts/header' %> 
+
 <div class="header-container"> 
   <div class="wrapper">
     <div class="text">
-    <h1>Привет!&nbsp;&nbsp; Меня зовут Николай.</h1>
-      <p>Занимаюсь ремонтом электронных гаджетов уже более 16 лет.</p><br/><br/>
-        </div>
-      <div class="container">
-        <div class="column-1-5">
-          <img src="/images/money.png" alt="Монеты" /><br/><br/>
-          <p>Бесплатная диагностика в<br/>случае ремонта</p>
-        </div>
+      <h1>Привет!&nbsp; Меня зовут Николай.</h1>
+      <p>Занимаюсь ремонтом электронных гаджетов уже более 16 лет.</p>
+    </div>
 
-        <div class="column-1-5">
-          <img src="/images/warranty.png" alt="Гарантия" /><br/><br/>
-            <p>По завершении<br/>даю гарантию<br/>до года</p>
-        </div>
+    <div class="container">
+      <div class="column-1-5">
+        <img src="/images/money.png" alt="Монеты" />
+        <p>Бесплатная диагностика в<br/>случае ремонта</p>
+      </div>
 
-        <div class="column-1-5">
-          <img src="/images/time.png" alt="Время" /><br/><br/>
-            <p>Быстро приеду, ликвидирую все неисправности</p>
-        </div>
+      <div class="column-1-5">
+        <img src="/images/warranty.png" alt="Гарантия" />
+        <p>По завершении<br/>даю гарантию<br/>до года</p>
+      </div>
+
+      <div class="column-1-5">
+        <img src="/images/time.png" alt="Время" />
+        <p>Быстро приеду, ликвидирую все неисправности</p>
+      </div>
   
-        <div class="column-1-5">
-          <img src="/images/reviews.png" alt="Отзывы" /><br/><br/>
-            <p>Подтверждено отличными<br/><a href="https://vk.com/kompremont39">отзывами</a></p>
-        </div>  
+      <div class="column-1-5">
+        <img src="/images/reviews.png" alt="Отзывы" />
+        <p>Подтверждено отличными<br/><a href="https://vk.com/kompremont39">отзывами</a></p>
+      </div>  
 
-        <div class="column-1-5">
-          <img src="/images/jur.png" alt="Сектор" /><br/><br/>
-            <p>Работаю с юр.лицами как<br/>самозанятый</p>
-        </div>       
+      <div class="column-1-5">
+        <img src="/images/jur.png" alt="Сектор" />
+        <p>Работаю с юр.лицами как<br/>самозанятый</p>
+      </div>       
     </div>
   </div>
 </div>
+
+<%= render 'layouts/footer' %>

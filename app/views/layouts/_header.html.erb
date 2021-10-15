@@ -1,5 +1,5 @@
 <div class="search-box">
-  <input type="text" placeholder=" Напишите что-то">
+  <input type="text" placeholder="">
 </div>
 
 <div class="nav-container">
@@ -12,12 +12,9 @@
   	  	<p>КОМПЬЮТЕРНЫЙ СЕРВИС</p>
   	  </div>
   	  <ul class="nav-items">
-  	  	<li>
-  	  	  <a href="#">обо мне</a>
-  	  	</li>
-  	  	<li>
-  	  	  <a href="/images/price.png">цены</a>
-  	  	</li>
+  	  	<li><%= link_to "главная", root_path %></li>
+  	  	<li><%= link_to "обо мне", about_path %></li>
+  	  	<li><%= link_to "цены", price_path %></li>
   	  </ul>	
   	</nav>
   </div>	

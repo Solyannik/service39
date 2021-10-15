@@ -10,7 +10,7 @@ body {
 .title {
   font-size: 30px;
   font-family: "Roboto";
-  margin-right: 320px;
+  margin-right: 220px;
   font-weight: bold;
   margin-top: 20px;
 }
@@ -18,9 +18,15 @@ body {
 .text {
   font-family: 'Abril Fatface';
   font-size: 30px;
-  margin-top:  -100px !important;
   font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .column-1-5 {
@@ -30,6 +36,28 @@ body {
   font-size: 24px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 960px) {
+  .column-1-5 {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media (max-width: 640px) {
+  .column-1-5 {
+    float: none;
+    width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .column-1-5 {
+    float: none;
+    width: auto;
+  }
 }
 
 /* Navigation */
@@ -44,8 +72,27 @@ body {
 }
 
 .wrapper {
-  width: 1200px;
+  font-family: 'Abril Fatface';
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+@media (max-width: 1200px){
+  .wrapper {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 992px){
+  .wrapper {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 767px){
+  .wrapper {
+    max-width: none;
+  }
 }
 
 nav {
@@ -93,17 +140,17 @@ nav .logo {
 .nav-items li a {
   color: #021718;
   font-size: 24px;
-  font-family: "Poppins", sans-serif;
   text-decoration: none;
 }
 
 /* Header */
 
 .header-container {
-  height: 800px;
+  height: 100%;
   background: #8dbafc;
   display: flex;
   align-items: center;
+  margin: 0px auto;
 }
 
 header {
@@ -113,7 +160,7 @@ header {
 }
 
 header h1 {
-  font-weight: 900;
+  font-weight: 900px;
   font-size: 64px;
   line-height: 75px;
   color: #021718;
@@ -148,10 +195,19 @@ header a:hover {
 .social-icons {
   display: flex;
   align-items: center;
+  padding: 30px 0;
+  background: #fffffa;
 }
 
 .social-icons a {
-  margin: 0 24px;
+  margin: 0 30px;
+}
+
+container .social-icons h2 {
+  font-size: 35px;
+  margin-top: 0px !important;
+  margin-left: 500px;
+  position: fixed;
 }
 
 .social-icons a:nth-of-type(1) {
@@ -159,10 +215,8 @@ header a:hover {
 }
 
 .social-icons img {
-  width: 30px;
-  height: 30px;
-  position: fixed;
-  bottom: 50px;
+  width: 35px;
+  height: 35px;
 }
 
 .social-icons img:hover {
@@ -180,6 +234,7 @@ header .hero-image img {
   position: relative;
   z-index: 100;
   margin-top: 40px;
+  margin-bottom: 40px;
   width: 550px;
   height: 410px;
   margin-left: 40px;
@@ -204,17 +259,11 @@ header .hero-image .photo-bg {
 /* Search-box */
 
 .search-box {
-  background: #8dbafc;
-  width: 1200px;
   margin: 0 auto;
   text-align: right;
   position: relative;
   top: 0;
   transition: 300ms;
-}
-
-.search-box.active {
-  top: 72px;
 }
 
 .search-box input {
@@ -225,10 +274,6 @@ header .hero-image .photo-bg {
   line-height: 42px;
   border: 0;
   padding: 12px 48px;
-}
-
-.search-box input::placeholder {
-  color: #b3b3b3;
 }
 
 /* Search & Close Buttons */
@@ -249,7 +294,6 @@ header .hero-image .photo-bg {
   pointer-events: none;
   transform: translateY(-6px);
   transition: 300ms;
-
 }
 
 .nav-btn-container .search-btn {
@@ -268,6 +312,3 @@ header .hero-image .photo-bg {
   pointer-events: auto;
   transform: translateY(0);
 }
-
-/* Hidden Items */
-
