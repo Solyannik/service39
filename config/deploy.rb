@@ -8,7 +8,7 @@ set :repo_url, "https://github.com/Solyannik/service39.git"
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, "/var/www/service39"
+set :deploy_to, "/home/deploy/www/service39"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
