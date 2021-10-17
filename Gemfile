@@ -33,6 +33,7 @@ end
 group :development do
   gem 'sqlite3'
   gem 'web-console', '>= 3.3.0'
+  gem "capistrano", "~> 3.16", require: false
 end
 
 group :test do
