@@ -130,7 +130,6 @@ nav .logo {
 .nav-items li:hover {
   border-color: #8dbafc;   #рамочка при наведении
   border-radius: 6px;
-  
 }
 
 .nav-items li:nth-last-of-type(1) {
